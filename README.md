@@ -43,4 +43,5 @@ This project is the solution for [Frontend Mentor Results Summary Component chal
 ## Final Notes
 
 This particular one didn't present any major challenges, I didn't need to do much research. I just had to refresh my memory on the names of some properties, since I already knew what I needed to do.
-The lack of challenge is super cool, it means I'm making progress and things that used to be difficult are becoming easier., I'm proud of my progress and I'm excited to keep learning and growing.
+The lack of challenge is super cool, it means I'm making progress and things that used to be difficult are becoming easier.
+I'm proud of my progress and I'm excited to keep learning and growing.
