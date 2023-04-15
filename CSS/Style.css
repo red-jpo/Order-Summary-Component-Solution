@@ -1,0 +1,138 @@
+* {
+  font-size: 16px;
+  margin: 0;
+  color: hsl(224, 23%, 55%);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+}
+body .body-background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 95vh;
+}
+
+.container {
+  background-color: white;
+  width: 28rem;
+  border-radius: 1rem;
+  box-shadow: 0px 15px 36px -25px hsl(245, 68%, 63%);
+}
+.container .illustration-hero {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.container .content {
+  padding: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text .title {
+  font-size: 1.7rem;
+  color: hsl(223, 47%, 23%);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  font-weight: 900;
+}
+.text .description {
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+.pricing {
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  align-items: center;
+  margin: 1.2rem 0 0 0;
+}
+.pricing .icon {
+  margin-right: 1rem;
+}
+.pricing .annual-plan {
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+  line-height: 1.6rem;
+}
+.pricing .change {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-left: auto;
+}
+.pricing .change:hover {
+  text-decoration: none;
+  color: hsl(245, 68%, 63%);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.buttons a {
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+.buttons .proceed-payment {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin: 1.8rem 0;
+  box-shadow: 0px 15px 36px -15px hsl(245, 75%, 52%);
+}
+.buttons .proceed-payment:hover {
+  background-color: hsl(245, 68%, 63%);
+}
+.buttons .cancel-btn {
+  text-align: center;
+}
+.buttons .cancel-order:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+footer .foot {
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+footer a {
+  color: hsl(245, 68%, 63%);
+}
+
+@media only screen and (max-width: 699px) {
+  * {
+    font-size: 14px;
+  }
+  picture source {
+    width: 100%;
+  }
+  .container {
+    width: 90vw;
+  }
+  .container .content {
+    padding: 1.5rem;
+  }
+  .description {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=Style.css.map */

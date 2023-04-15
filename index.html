@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/Style.css" />
+
+    <title>Order summary card | Frontend Mentor</title>
+  </head>
+  <body>
+    <picture>
+      <source
+        media="(max-width: 699px)"
+        srcset="images/pattern-background-mobile.svg"
+      />
+      <img
+        class="body-background"
+        src="images/pattern-background-desktop.svg"
+        alt=""
+      />
+    </picture>
+    <main>
+      <section class="container">
+        <div class="main-img">
+          <img
+            class="illustration-hero"
+            src="images/illustration-hero.svg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <div class="text">
+            <h1 class="title">Order Summary</h1>
+            <p class="description">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </div>
+          <div class="pricing">
+            <img class="icon" src="images/icon-music.svg" alt="" />
+            <div class="plan-price">
+              <h5 class="annual-plan">Annual Plan</h5>
+              <p class="annual-fee">$59.99/year</p>
+            </div>
+            <a class="change" href="#">Change</a>
+          </div>
+          <div class="buttons">
+            <a class="proceed-payment" href="#">Proceed to Payment</a>
+            <div class="cancel-btn">
+              <a class="cancel-order" href="#">Cancel Order</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <div class="attribution foot">
+      Challenge by
+      <a
+        class="foot"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a class="foot" href="https://github.com/red-jpo?tab=repositories"
+        >Red.jpo</a
+      >.
+    </div>
+  </footer>
+</html>

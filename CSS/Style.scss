@@ -1,0 +1,171 @@
+//Primary
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+
+//Neutral
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+$shadow: hsl(245, 68%, 63%);
+
+* {
+  font-size: 16px;
+  margin: 0;
+  color: $Desaturated-blue;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: $Pale-blue;
+
+  .body-background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 95vh;
+}
+
+.container {
+  background-color: white;
+  width: 28rem;
+  border-radius: 1rem;
+  box-shadow: 0px 15px 36px -25px $shadow;
+
+  .illustration-hero {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .content {
+    padding: 2.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.text {
+  .title {
+    font-size: 1.7rem;
+    color: $Dark-blue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    font-weight: 900;
+  }
+
+  .description {
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.6rem;
+  }
+}
+
+.pricing {
+  display: flex;
+  background-color: $Very-pale-blue;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  align-items: center;
+  margin: 1.2rem 0 0 0;
+
+  .icon {
+    margin-right: 1rem;
+  }
+
+  .annual-plan {
+    font-weight: 700;
+    color: $Dark-blue;
+    line-height: 1.6rem;
+  }
+
+  .change {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-left: auto;
+
+    &:hover {
+      text-decoration: none;
+      color: $shadow;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+
+  a {
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .proceed-payment {
+    background-color: $Bright-blue;
+    color: white;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin: 1.8rem 0;
+    box-shadow: 0px 15px 36px -15px $Bright-blue;
+
+    &:hover {
+      background-color: $shadow;
+    }
+  }
+
+  .cancel-btn {
+    text-align: center;
+  }
+
+  .cancel-order:hover {
+    color: $Dark-blue;
+  }
+}
+
+footer {
+  .foot {
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  a {
+    color: $shadow;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  * {
+    font-size: 14px;
+  }
+
+  picture {
+    source {
+      width: 100%;
+    }
+  }
+  .container {
+    width: 90vw;
+    .content {
+      padding: 1.5rem;
+    }
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
